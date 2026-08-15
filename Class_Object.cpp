@@ -1,32 +1,22 @@
 #include<bits/stdc++.h>
 using namespace std;
-class student{
+
+class Student{
 public:
 char name[100];
 int roll;
 double gpa;
-
-
 };
-
 
 int main(){
 
-student a;
+Student a;
 a.roll = 10;
-a.gpa = 5.9;
-char ary[] = "tanim";
-strcpy(a.name,ary);
+a.gpa = 4.58;
+char ad[100] = "Akib";
+strcpy(a.name,ad);
 
-cout<<a.gpa<<endl<<a.name<<endl<<a.roll<<endl;
-
-
-
-
-
-
-
-
+cout<<a.name<<" "<<a.gpa<<" "<<a.roll<<endl;
 
     return 0;
 }
