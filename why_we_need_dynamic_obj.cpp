@@ -1,33 +1,30 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-class Student{
+class Student
+{
 public:
-int roll;
-int id;
-int cls;
+    int roll;
+    int id;
+    int batch;
 
-Student(int roll,int id,int cls){
-this->roll = roll;
-this->id = id;
-this->cls = cls;
-
-}
-
-
+    Student(int roll, int id, int batch)
+    {
+        this->roll = roll;
+        this->id = id;
+        this->batch = batch;
+    }
 };
-
-Student* fun(){
-    Student Rahim(10,20,30);
-    Student*p = &Rahim;
-    return p;
+Student *fun()
+{
+    Student Karim(25, 89, 37);
+    Student *P = &Karim;
+    return P;
 }
 
-int main(){
+int main()
+{
+    Student *obj = fun();
+    cout << obj->id << " " << obj->batch << " " << obj->roll << endl;
 
-
-
-Student* p = fun();
-cout<<p->roll<<" "<<p->id<<" "<<p->cls<<endl;
-
-
+    return 0;
 }
